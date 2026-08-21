@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>NOCTURNE — a fragrance in six movements</title>
+    <meta
+      name="description"
+      content="Scroll through NOCTURNE, an evening fragrance composed in six movements."
+    />
+    <style>
+      :root,
+      .sw-root {
+        --sw-bg: #0b0b0a;
+        --sw-ink: #f7f1e7;
+        --sw-ink-soft: #b5aa9a;
+        --sw-accent: #c8a66a;
+        --sw-font-display: Georgia, "Times New Roman", serif;
+        --sw-font-body: "Helvetica Neue", Arial, sans-serif;
+      }
+      html {
+        background: #0b0b0a;
+      }
+      body {
+        margin: 0;
+        background: #0b0b0a;
+      }
+      .sw-root {
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="world"></div>
+    <script src="skills/lets-scroll/references/scrub-engine.js"></script>
+    <script>
+      mountLetsScroll(document.getElementById("world"), {
+        brand: { name: "NOCTURNE", href: "#top" },
+        cta: { label: "Discover the scent", href: "#finale" },
+        hint: "scroll to enter the night",
+        atmosphere: true,
+        diveScroll: 1.15,
+        connScroll: 0.7,
+        sections: [
+          {
+            id: "opening",
+            label: "7:42 PM",
+            still: "assets/opening.svg",
+            accent: "#d7b878",
+            eyebrow: "The invitation",
+            title: "The city is waiting.",
+            body: "You close the door behind you, and the evening opens like a secret you already know.",
+            tags: ["An evening scent", "Unisex"],
+          },
+          {
+            id: "citrus",
+            label: "8:06 PM",
+            still: "assets/citrus.svg",
+            accent: "#e5bf70",
+            eyebrow: "Outside",
+            title: "You step into the glow.",
+            body: "A flash of bergamot and bitter orange follows you into the street, bright and impossible to ignore.",
+            tags: ["Bergamot", "Bitter orange"],
+          },
+          {
+            id: "heart",
+            label: "9:18 PM",
+            still: "assets/heart.svg",
+            accent: "#bd826f",
+            eyebrow: "The turn",
+            title: "The night gets closer.",
+            body: "Somewhere between a laugh and a lingering look, iris, rose, and saffron warm against your skin.",
+            tags: ["Iris", "Rose absolute", "Saffron"],
+          },
+          {
+            id: "woods",
+            label: "11:47 PM",
+            still: "assets/woods.svg",
+            accent: "#b98b5d",
+            eyebrow: "After midnight",
+            title: "Time slows down here.",
+            body: "Cedar, smoked vetiver, and sandalwood settle into the quiet—the part of the night you wish would last.",
+            tags: ["Cedar", "Vetiver"],
+          },
+          {
+            id: "ritual",
+            label: "1:03 AM",
+            still: "assets/ritual.svg",
+            accent: "#caa878",
+            eyebrow: "The morning after",
+            title: "Some nights stay with you.",
+            body: "Back home, the last trace is still there: warm, familiar, and not quite ready to let go.",
+            tags: ["20% parfum oil", "Hand-finished"],
+          },
+          {
+            id: "finale",
+            label: "The next night",
+            still: "assets/finale.svg",
+            accent: "#e3c27d",
+            eyebrow: "Begin again",
+            title: "Wear the story again.",
+            body: "NOCTURNE is a magnetic eau de parfum for making an ordinary evening feel like the beginning of something.",
+            tags: [],
+            cta: {
+              primary: { label: "Shop NOCTURNE", href: "#shop" },
+              secondary: { label: "Read the notes", href: "#notes" },
+            },
+          },
+        ],
+        connectors: [],
+      });
+    </script>
+  </body>
+</html>
